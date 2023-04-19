@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  displayName: 'Create Resource Group using ARM Template'
+  inputs:
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: '<service connection name>'
+    location: 'East US2'
+    templateLocation: 'Linked artifact'
+    csmFile: 'ARM-Template\createsingleresourcegroup.json'

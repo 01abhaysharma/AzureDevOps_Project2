@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "rgLocation": {
+      "type": "string",
+      "defaultValue": "East US2"
+    },
+    "rgNamePrefix": {
+      "type": "string",
+      "defaultValue": "myResourceGroup"
+    },
+    "numberOfResourceGroups": {
+      "type": "int",
+      "defaultValue": 2
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2020-10-01",
+      "location": "[parameters('rgLocation')]",
+      "name": "[concat(parameters('rgNamePrefix'), copyIndex(1))]",
+      "copy": {
+        "name": "resourceGroupCopy",
+        "count": "[parameters('numberOfResourceGroups')]"
+      }
+    }
+  ],
+  "outputs": {}
+}
