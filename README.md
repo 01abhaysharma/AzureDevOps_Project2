@@ -268,6 +268,29 @@ That's it! Your ARM templates and YAML file are now ready.
 
 Watch this hands-on video here: https://youtu.be/39QUdECvFRU
 
+# Step 3: Uploading ARM template and YAML pipeline files to Github and Importing them to Azure DevOps Repo
+
+1. Go to the GitHub website and sign in to your account.
+2. On the homepage, click on the "Create a new repository" button or go to your profile and click on the "New" button.
+3. Give your repository a name and add a description (optional).
+4. Choose whether you want your repository to be public or private.
+5. Initialize the repository with a README file.
+6. Click on the "Create repository" button.
+7. On the next screen, you can upload your existing code to the repository. You can drag and drop the files or click on the "Upload files" button.
+8. Once your files are uploaded, you can commit them to the repository by adding a commit message and clicking on the "Commit changes" button.
+9. Now in Azure DevOps, navigate to the project (Created in Step 1) where you want to create a new repo.
+10. In the left-hand menu, click on "Repos".
+11. In the repository page, click on the "Import" button located in center of page in "Import a repository" section.
+12. In the import dialog box, select "Git" as the repository type and under clone URL paste the URL of GitHub repository that You want to import.
+13. You may need to authenticate to your GitHub account and authorize Azure DevOps to access your repositories.
+14. Select the repository you want to import.
+15. Click on "Import" to start the import process.
+16. Wait for the import process to complete. Depending on the size of your codebase, this may take a few minutes or longer.
+
+That's it! Your template files are now uploaded to Github and imported to Azure DevOps Repo.
+
+Watch this hands-on video here: https://youtu.be/KXYrVZa6LbA
+
 To be contd...
 
 
