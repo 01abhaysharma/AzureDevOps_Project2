@@ -291,6 +291,23 @@ That's it! Your template files are now uploaded to Github and imported to Azure 
 
 Watch this hands-on video here: https://youtu.be/KXYrVZa6LbA
 
-To be contd...
+# Step 4: Creating Azure DevOps pipeline to deploy ARM templates to create single / multiple resource groups in Azure:
+
+1. Navigate to your Azure DevOps project and click on "Pipelines" in the left sidebar.
+2. Click on "New pipeline" to create a new pipeline.
+3. Choose the source of your code. Select "Azure Repos Git" and choose your repository and branch.
+4. Choose a pipeline template to start with. Select the "Existing Azure pipeline YAML file" template, select Branch and path of Your YAML file (To deploy single / multiple resource groups as created in step 2 above).
+5. In the "Review your pipeline YAML" step, review the pipeline YAML file and click on Run.
+6. Once pipeline is completed successfully, navigate to Azure portal to validate created Resource Groups.
+
+That's it! Your pipeline is now executed and resource groups are create in Azure portal.
+
+Watch the hands-on videos here: 
+
+https://youtu.be/uYtXrXd2q1Y
+
+https://youtu.be/jyO36Umqn5Q
+
+https://youtu.be/189Nfm4knA4
 
 
